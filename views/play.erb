@@ -1,0 +1,14 @@
+<body style="color:red; fontsize:56px" background="https://omanali.weebly.com/uploads/2/5/7/2/25723270/1495093_orig.jpg" >
+  <h1 style="background:white">Player 1 is playing as Battle legend:</h1>
+  <h2 style="background:white"><%= $game.player1.name %></h2>
+  <h2 id="p1_health" style="background:white"><%= $game.player1.health %>HP</h2>
+  <h1 style="background:white">Player 2 is playing as Battle boi:</h1>
+  <h2 style="background:white"><%= $game.player2.name %></h2>
+  <h2 id="p2_health" style="background:white"><%= $game.player2.health %>HP</h2>
+  <h2 style="background:white"><%= @attack_message %></h2>
+
+  <form action='/attack' method='post'>
+    <h2 style="background:white">Player Controls</h2>
+    <input type='submit' id='attack' value='Attack'>
+  </form>
+</body>
